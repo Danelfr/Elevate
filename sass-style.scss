@@ -1,7 +1,13 @@
+/* Variables */
+$primary-color: #ff7e5f;
+$secondary-color: #feb47b;
+$text-color: #333;
+$background-color: #f3f3f3;
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  color: #333;
+  color: $text-color;
   margin: 0;
   padding: 0;
 }
@@ -22,7 +28,7 @@ h2 {
   .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #ff7e5f;
+    color: $primary-color;
   }
 
   .nav-links {
@@ -39,7 +45,7 @@ h2 {
       font-weight: bold;
 
       &:hover {
-        color: #ff7e5f;
+        color: $primary-color;
       }
     }
   }
@@ -56,7 +62,7 @@ h2 {
   text-decoration: none;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  background: linear-gradient(45deg, $primary-color, $secondary-color);
 
   &:hover {
     box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.4);
@@ -76,7 +82,7 @@ h2 {
 
   h1 {
     font-size: 48px;
-    color: #ff7e5f;
+    color: $primary-color;
   }
 
   p {
@@ -90,7 +96,7 @@ h2 {
 
 /* Features & Plans Sections */
 .features {
-  background: #f3f3f3;
+  background: $background-color;
 }
 
 .center-section {
